@@ -1,0 +1,15 @@
+# Django
+Django>=6.0
+
+# Django REST Framework
+djangorestframework>=3.14.0
+
+# CORS headers
+django-cors-headers>=4.0.0
+
+# JWT Authentication
+djangorestframework-simplejwt>=5.3.0
+
+# Database (already included with Django)
+# sqlite3 is built-in
+
