@@ -1,0 +1,165 @@
+/* App Container Styles */
+
+/* Auth Forms (Login & Register) */
+.auth-container {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-container h2 {
+  text-align: center;
+  color: #667eea;
+  margin-bottom: 30px;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container .form-footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+}
+
+.auth-container .form-footer a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-container .form-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard */
+.dashboard {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.dashboard h2 {
+  text-align: center;
+  color: #667eea;
+  margin-bottom: 30px;
+}
+
+/* Task Form */
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.task-form input {
+  flex: 1;
+  margin-bottom: 0;
+  border-color: #e1e1e1;
+}
+
+.task-form button {
+  width: auto;
+  padding: 12px 30px;
+  white-space: nowrap;
+}
+
+/* Task List */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.task-item:hover {
+  background: #e9ecef;
+  transform: translateX(4px);
+}
+
+.task-item .task-title {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.task-item .delete-btn {
+  width: auto;
+  padding: 8px 16px;
+  background: #ff6b6b;
+  font-size: 0.9rem;
+}
+
+.task-item .delete-btn:hover {
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+}
+
+/* Logout Button */
+.logout-btn {
+  width: auto;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  background: #ff6b6b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .auth-container {
+    padding: 30px 20px;
+  }
+
+  .dashboard {
+    padding: 20px;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-form button {
+    width: 100%;
+  }
+
+  .task-item {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .task-item .delete-btn {
+    width: 100%;
+  }
+}
+
